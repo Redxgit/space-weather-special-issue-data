@@ -1,0 +1,592 @@
+\documentclass[draft,sw]{agutexSI2019}
+
+\usepackage{graphicx}
+\setkeys{Gin}{draft=false}
+
+
+\begin{document}
+
+\title{Deep Neural Network for SYM-H Forecasting aided by ACE's SWICS plasma data}
+
+\authors{Armando Collado-Villaverde\affil{1}, Pablo Mu\~noz\affil{1}, Consuelo Cid\affil{2}}
+
+\affiliation{1}{Department of Computer Engineering, University of Alcal\'a, Alcal\'a de Henares, Madrid, Spain}
+\affiliation{2}{Department of Physics and Mathematics, University of Alcal\'a, Alcal\'a de Henares, Madrid, Spain}
+
+\begin{article}
+
+\renewcommand\tablename{Figure}
+
+
+
+\noindent\textbf{Contents of this file}
+\begin{enumerate}
+\item Figures S1 to S17
+\end{enumerate}
+
+
+
+\noindent\textbf{Introduction}
+
+This file contains the figures for each of the test geomagnetic storms, comparing the observed and predicted SYM-H for the six trained neural networks for both time horizons, 1 and 2 hours ahead. 
+
+\begin{itemize}
+    \item Model [1]: Trained with SWEPAM's missing data filled with SWICS both in training and test data for 1 hour ahead forecasts.
+    \vspace*{-5pt}
+    \item Model [2]: Trained with SWEPAM's missing data filled with SWICS both in training and test data for 2 hours ahead forecasts.
+    \vspace*{-5pt}
+    \item Model [3]: Trained only with SWEPAM's data, the missing vaues have been interpolated both in training and test data for 1 hour ahead forecasts.
+    \vspace*{-5pt}
+    \item Model [4]: Trained only with SWEPAM's data, the missing vaues have been interpolated both in training and test data 2 hours ahead forecasts.
+\end{itemize}
+
+
+\end{article}
+\clearpage
+
+
+% Figure for storm 26
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_26.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_26.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_26.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_26.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_26.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_26.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 26 -- June of 1998}
+\label{storm-26}
+\end{table}
+
+
+
+% Figure for storm 27
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_27.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_27.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_27.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_27.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_27.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_27.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 27 -- November of 1998}
+\label{storm-27}
+\end{table}
+
+
+
+% Figure for storm 28
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_28.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_28.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_28.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_28.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_28.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_28.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 28 -- January of 1999}
+\label{storm-28}
+\end{table}
+
+
+
+% Figure for storm 29
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_29.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_29.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_29.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_29.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_29.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_29.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 29 -- April of 1999}
+\label{storm-29}
+\end{table}
+
+
+
+% Figure for storm 30
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_30.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_30.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_30.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_30.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_30.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_30.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 30 -- January of 2000}
+\label{storm-30}
+\end{table}
+
+
+
+% Figure for storm 31
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_31.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_31.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_31.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_31.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_31.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_31.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 31 -- April of 2000}
+\label{storm-31}
+\end{table}
+
+
+
+% Figure for storm 32
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_32.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_32.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_32.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_32.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_32.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_32.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 32 -- May of 2000}
+\label{storm-32}
+\end{table}
+
+
+
+% Figure for storm 33
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_33.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_33.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_33.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_33.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_33.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_33.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 33 -- March of 2001}
+\label{storm-33}
+\end{table}
+
+
+
+% Figure for storm 34
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_34.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_34.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_34.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_34.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_34.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_34.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 34 -- June of 2003}
+\label{storm-34}
+\end{table}
+
+
+
+% Figure for storm 35
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_35.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_35.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_35.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_35.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_35.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_35.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 35 -- July of 2003}
+\label{storm-35}
+\end{table}
+
+
+
+% Figure for storm 36
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_36.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_36.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_36.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_36.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_36.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_36.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 36 -- January of 2004}
+\label{storm-36}
+\end{table}
+
+
+
+% Figure for storm 37
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_37.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_37.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_37.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_37.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_37.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_37.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 37 -- November of 2004}
+\label{storm-37}
+\end{table}
+
+
+
+% Figure for storm 38
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_38.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_38.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_38.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_38.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_38.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_38.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 38 -- September of 2012}
+\label{storm-38}
+\end{table}
+
+
+
+% Figure for storm 39
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_39.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_39.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_39.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_39.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_39.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_39.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 39 -- June of 2013}
+\label{storm-39}
+\end{table}
+
+
+
+% Figure for storm 40
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_40.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_40.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_40.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_40.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_40.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_40.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 40 -- June of 2013}
+\label{storm-40}
+\end{table}
+
+
+
+% Figure for storm 41
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_41.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_41.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_41.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_41.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_41.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_41.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 41 -- March of 2015}
+\label{storm-41}
+\end{table}
+
+
+
+% Figure for storm 42
+\begin{table}
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics/1h_swics_storm_42.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics/2h_swics_storm_42.png}
+\\
+Model [1] & Model [2]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_no_swics/1h_no_swics_storm_42.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_no_swics/2h_no_swics_storm_42.png}
+\\
+Model [3] & Model [4]
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots/1h_swics_model_on_no_swics/1h_swics_model_on_no_swics_storm_42.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots/2h_swics_model_on_no_swics/2h_swics_model_on_no_swics_storm_42.png}
+\\
+Model [1] evaluated on Model [3]'s test data & Model [2] evaluated on Model [4]'s test data
+\vspace*{12pt}
+\\
+\end{tabular}
+\caption{Predictions for Storm Number 42 -- August of 2018}
+\label{storm-42}
+\end{table}
+
+
+
+\end{document}
