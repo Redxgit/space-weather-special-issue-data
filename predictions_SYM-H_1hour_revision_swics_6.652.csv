@@ -1,4 +1,4 @@
-datetime,storm_index,original_SYM-H_t0,original_SYM_H-t60,predicted_SYM_H-t60
+datetime,storm_index,original_SYM_H-t0,original_SYM_H-t60,predicted_SYM_H-t60
 1998-06-21 02:40:00,26,-13.000001,-19.0,-17.131271
 1998-06-21 02:45:00,26,-14.0,-21.0,-18.199854
 1998-06-21 02:50:00,26,-14.0,-18.0,-19.170572
