@@ -20,10 +20,14 @@ The repository contains the predictions made by the four models and the two extr
 
 - rmses.csv: CSV file with the RMSE metrics for the predictions made Iong et al. GBM model (https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2021SW002928), Siciliano et al. LSTM Model (https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2020SW002589), the Burton equation (https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/1998JA000437), our previous work (https://agupubs.onlinelibrary.wiley.com/doi/epdf/10.1029/2021SW002748) and the persistence model
 
-- predictions_SYM-H_1hour_swics.csv: SYM-H index one hour ahead forecasts made by the model of the paper. Missing values of SWEPAM are filled using SWICS.
+- predictions_SYM-H_1hour_swepam_real_time: SYM-H index one hour ahead forecasts made by the model trained only with SWEPAM data in operational conditions. 
 
-- predictions_SYM-H_2hour_swics.csv: SYM-H index two hours ahead forecasts made by the model of the paper. Missing values of SWEPAM are filled using SWICS.
+- predictions_SYM-H_2hour_swepam_real_time: SYM-H index two hours ahead forecasts made by the model trained only with SWEPAM data in operational conditions. 
 
-- predictions_SYM-H_1hour_real_time.csv: SYM-H index one hour ahead forecasts made by the model of the paper under real-time conditions. Missing values in the MAG and SWEPAM instruments are interpolated if they are surrounded by valid values, otherwise the last valid value has been propagated forward to make the prediction.
+- predictions_SYM-H_1hour_swics_real_time.csv: SYM-H index one hour ahead forecasts made by the model trained only SWEPAM and SWICS data in operational conditions. 
 
-- predictions_SYM-H_2hour_real_time.csv: SYM-H index two hours ahead forecasts made by the model of the paper under real-time conditions. Missing values in the MAG and SWEPAM instruments are interpolated if they are surrounded by valid values, otherwise the last valid value has been propagated forward to make the prediction.  
+- predictions_SYM-H_2hour_swics_real_time.csv: SYM-H index two hours ahead forecasts made by the model trained only SWEPAM and SWICS data in operational conditions. 
+
+- predictions_SYM-H_1hour_swics.csv: SYM-H index one hour ahead forecasts made by the model trained with SWEPAM and SWICS data in laboratory conditions.
+
+- predictions_SYM-H_2hour_swics.csv: SYM-H index two hours ahead forecasts made by the model trained with SWEPAM and SWICS data in laboratory conditions.
