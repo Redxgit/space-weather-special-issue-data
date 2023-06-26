@@ -17,27 +17,24 @@
 
 \renewcommand\tablename{Figure}
 
-
-
 \noindent\textbf{Contents of this file}
 \begin{enumerate}
 \item Figures S1 to S17
 \end{enumerate}
-
-
 
 \noindent\textbf{Introduction}
 
 This file contains the figures for each of the test geomagnetic storms, comparing the observed and predicted SYM-H for the two trained neural networks for both time horizons, 1 and 2 hours ahead. 
 
 \begin{itemize}
-    \item 1 hour model: Evaluated with SWEPAM's missing data filled with SWICS for 1 hour ahead forecasts.
-    \vspace*{-5pt}
-    \item 2 hours model: Evaluated with SWEPAM's missing data filled with SWICS for 2 hours ahead forecasts.
-    \vspace*{-5pt}
-    \item 1 hour model in real-time: Evaluated in real-time conditions, SWEPAM's missing data will be interpolated if the value to interpolate to is available, otherwise the last valid value is propagated for 1 hour ahead forecasts.
-    \vspace*{-5pt}
-    \item 2 hours model in real-time: Evaluated in real-time conditions, SWEPAM's missing data will be interpolated if the value to interpolate to is available, otherwise the last valid value is propagated for 1 hour ahead forecasts.
+    \item 1 hour SWEPAM model in real-time: Model trained on SWEPAM data only and evaluated in real-time conditions, SWEPAM's missing data will be interpolated if the value to interpolate to is available, otherwise the last valid value is propagated for 1 hour ahead forecasts.
+    \item 2 hours SWEPAM model in real-time: Model trained on SWEPAM data only and evaluated in real-time conditions, SWEPAM's missing data will be interpolated if the value to interpolate to is available, otherwise the last valid value is propagated for 1 hour ahead forecasts.
+    \item 1 hour SWICS model in real-time: Model trained with SWEPAM's missing data filled using SWICS evaluated in real-time conditions, SWEPAM's missing data will be interpolated if the value to interpolate to is available, otherwise the last valid value is propagated for 1 hour ahead forecasts.
+    \item 2 hours SWICS model in real-time: Model trained with SWEPAM's missing data filled using SWICS evaluated in real-time conditions, SWEPAM's missing data will be interpolated if the value to interpolate to is available, otherwise the last valid value is propagated for 2 hours ahead forecasts.
+	\item Laboratory conditions SWICS model 1h: Model trained with SWEPAM's missing data filled using SWICS and evaluated in the same conditions for 1 hour ahead forecasts.
+    \item Laboratory conditions SWICS model 2h: Model trained with SWEPAM's missing data filled using SWICS and evaluated in the same conditions for 2 hours ahead forecasts.
+
+    
 \end{itemize}
 
 
@@ -53,14 +50,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_26.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_26.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_26.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_26.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_26.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_26.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_26.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -78,14 +82,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_27.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_27.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_27.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_27.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_27.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_27.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_27.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -103,14 +114,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_28.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_28.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_28.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_28.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_28.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_28.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_28.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -128,14 +146,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_29.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_29.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_29.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_29.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_29.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_29.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_29.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -153,14 +178,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_30.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_30.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_30.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_30.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_30.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_30.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_30.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -178,14 +210,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_31.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_31.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_31.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_31.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_31.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_31.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_31.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -203,14 +242,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_32.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_32.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_32.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_32.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_32.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_32.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_32.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -228,14 +274,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_33.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_33.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_33.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_33.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_33.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_33.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_33.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -253,14 +306,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_34.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_34.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_34.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_34.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_34.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_34.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_34.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -278,14 +338,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_35.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_35.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_35.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_35.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_35.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_35.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_35.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -303,14 +370,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_36.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_36.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_36.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_36.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_36.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_36.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_36.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -328,14 +402,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_37.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_37.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_37.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_37.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_37.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_37.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_37.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -353,14 +434,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_38.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_38.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_38.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_38.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_38.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_38.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_38.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -378,14 +466,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_39.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_39.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_39.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_39.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_39.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_39.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_39.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -403,14 +498,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_40.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_40.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_40.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_40.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_40.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_40.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_40.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -428,14 +530,21 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_41.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_41.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_41.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_41.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_41.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_41.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_41.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
@@ -453,20 +562,28 @@ This file contains the figures for each of the test geomagnetic storms, comparin
 &
 \includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics/2h_swics_storm_42.png}
 \\
-1h forecast using SWICS data & 2h forecast using SWICS data
+\shortstack{1h forecast using SWICS\\ in laboratory conditions} & \shortstack{2h forecast using SWICS\\ in laboratory conditions}
 \vspace*{12pt}
 \\
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_rt/1h_rt_storm_42.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swics_rt/1h_swics_rt_storm_42.png}
 &
-\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_rt/2h_rt_storm_42.png}
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swics_rt/2h_swics_rt_storm_42.png}
 \\
-1h forecast real-time scenario & 2h forecast real-time scenario 
+\shortstack{1h operational forecast trained\\ with SWEPAM and SWICS data} & \shortstack{2h operational forecast trained\\ with SWEPAM and SWICS data}
+\vspace*{12pt}
+\\
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/1h_swepam_rt/1h_swepam_rt_storm_42.png}
+&
+\includegraphics[width=0.49\linewidth]{paper_plots_shade/2h_swepam_rt/2h_swepam_rt_storm_42.png}
+\\
+\shortstack{1h operational forecast trained\\ with SWEPAM data only} & \shortstack{2h operational forecast trained\\ with SWEPAM data only}
 \vspace*{12pt}
 \\
 \end{tabular}
 \caption{Predictions for Storm Number 42 -- August of 2018}
 \label{storm-42}
 \end{table}
+
 
 
 
